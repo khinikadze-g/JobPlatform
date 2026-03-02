@@ -1,0 +1,25 @@
+﻿using AutoMapper;
+using JobPlatform.Api.Models.Domain;
+using JobPlatform.Api.Models.Dto;
+
+namespace JobPlatform.Api.Mapping
+{
+    public class AutoMapperProfiles : Profile
+    {
+        public AutoMapperProfiles() 
+        {
+            CreateMap<Candidate, CandidateDto>().ReverseMap();
+            CreateMap<Candidate, UpdateCandidateRequestDto>().ReverseMap();
+            CreateMap<Job, JobDto>().ReverseMap();
+            CreateMap<Job, CreateJobRequestDto>().ReverseMap();
+            CreateMap<Job, JobForCompanyDto>().ReverseMap();
+            CreateMap<Company, CompanyDto>().ReverseMap();
+            CreateMap<Company, CreateCompanyRequestDto>().ReverseMap();
+            CreateMap<Company, UpdateCandidateRequestDto>().ReverseMap();
+            CreateMap<Company, CompanyDtoForJobs>().ReverseMap();
+            CreateMap<JobApplication, CreateApplicationRequestDto>().ReverseMap();
+            CreateMap<JobApplication, CandidateApplicationDto>().ReverseMap();
+        }
+    }
+
+}
