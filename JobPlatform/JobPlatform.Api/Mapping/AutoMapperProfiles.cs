@@ -15,7 +15,7 @@ namespace JobPlatform.Api.Mapping
             CreateMap<Job, JobForCompanyDto>().ReverseMap();
             CreateMap<Company, CompanyDto>().ReverseMap();
             CreateMap<Company, CreateCompanyRequestDto>().ReverseMap();
-            CreateMap<Company, UpdateCandidateRequestDto>().ReverseMap();
+            CreateMap<Company, UpdateCompanyRequestDto>().ReverseMap();
             CreateMap<Company, CompanyDtoForJobs>().ReverseMap();
             CreateMap<JobApplication, CreateApplicationRequestDto>().ReverseMap();
             CreateMap<JobApplication, CandidateApplicationDto>().ReverseMap();

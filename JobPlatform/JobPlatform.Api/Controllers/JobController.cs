@@ -23,9 +23,11 @@ namespace JobPlatform.Api.Controllers
 
         [HttpGet]
         [Authorize]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn = null, [FromQuery] string? filterQuery= null, 
+            [FromQuery]string? sortBy = null, [FromQuery]bool? isAscending = true,
+            [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 20)
         {
-            var jobs = await jobRepository.GetAllAsync();
+            var jobs = await jobRepository.GetAllAsync(filterOn, filterQuery, sortBy, isAscending ?? true, pageNumber, pageSize);
             return Ok(mapper.Map<List<JobDto>>(jobs));
         }
         [HttpGet]
