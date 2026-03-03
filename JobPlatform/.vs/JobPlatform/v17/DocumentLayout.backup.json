@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|c:\\users\\asus\\desktop\\jobplatform\\jobplatform\\jobplatform.api\\mapping\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|solutionrelative:jobplatform.api\\mapping\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|c:\\users\\asus\\desktop\\jobplatform\\jobplatform\\jobplatform.api\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|solutionrelative:jobplatform.api\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|c:\\users\\asus\\desktop\\jobplatform\\jobplatform\\jobplatform.api\\repositories\\jobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|solutionrelative:jobplatform.api\\repositories\\jobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|c:\\users\\asus\\desktop\\jobplatform\\jobplatform\\jobplatform.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|solutionrelative:jobplatform.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|c:\\users\\asus\\desktop\\jobplatform\\jobplatform\\jobplatform.api\\repositories\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|solutionrelative:jobplatform.api\\repositories\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|c:\\users\\asus\\desktop\\jobplatform\\jobplatform\\jobplatform.api\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2462AF03-6A2F-4E1F-A1DF-BC11E38D1BEE}|JobPlatform.Api\\JobPlatform.Api.csproj|solutionrelative:jobplatform.api\\middlewares\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Mapping\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Api\\Mapping\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Mapping\\AutoMapperProfiles.cs*",
-              "RelativeToolTip": "JobPlatform.Api\\Mapping\\AutoMapperProfiles.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Title": "JobController.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Controllers\\JobController.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Api\\Controllers\\JobController.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Controllers\\JobController.cs*",
+              "RelativeToolTip": "JobPlatform.Api\\Controllers\\JobController.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T20:24:33.196Z",
+              "WhenOpened": "2026-03-03T10:34:41.189Z",
               "EditorCaption": ""
             },
             {
@@ -43,28 +43,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JobRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Repositories\\JobRepository.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Api\\Repositories\\JobRepository.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Repositories\\JobRepository.cs",
-              "RelativeToolTip": "JobPlatform.Api\\Repositories\\JobRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCkAAABKAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Api\\Middlewares\\ExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Middlewares\\ExceptionHandlerMiddleware.cs*",
+              "RelativeToolTip": "JobPlatform.Api\\Middlewares\\ExceptionHandlerMiddleware.cs*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCIAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:47:26.933Z",
+              "WhenOpened": "2026-03-03T10:16:40.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IJobRepository.cs",
-              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Repositories\\IJobRepository.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Api\\Repositories\\IJobRepository.cs",
-              "ToolTip": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Repositories\\IJobRepository.cs",
-              "RelativeToolTip": "JobPlatform.Api\\Repositories\\IJobRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Program.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\asus\\Desktop\\JobPlatform\\JobPlatform\\JobPlatform.Api\\Program.cs*",
+              "RelativeToolTip": "JobPlatform.Api\\Program.cs*",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAG4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:47:23.209Z",
+              "WhenOpened": "2026-03-03T09:59:10.032Z",
               "EditorCaption": ""
             }
           ]
