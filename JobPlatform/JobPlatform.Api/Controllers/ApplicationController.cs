@@ -25,9 +25,15 @@ namespace JobPlatform.Api.Controllers
         [Authorize]
         public async Task<IActionResult> Apply([FromBody] CreateApplicationRequestDto createApplicationRequestDto)
         {
-            var apply = mapper.Map<JobApplication>(createApplicationRequestDto);
-            await applicationRepository.ApplyAsync(apply);
-            return Ok(apply);
+           var apply = mapper.Map<JobApplication>(createApplicationRequestDto);
+           var result = await applicationRepository.ApplyAsync(apply);
+            if(result == null)
+            {
+                return BadRequest("Application failed");
+            }
+           return Ok(result);
+ 
+            
         }
         [HttpGet("Candidate/{candidateId}")]
         [Authorize]
@@ -35,12 +41,12 @@ namespace JobPlatform.Api.Controllers
         {
             var applications = await applicationRepository.GetByCandidateAsync(candidateId);
 
-            if (applications == null)
+            if (!applications.Any())
             {
                 return NotFound();
             }
 
-            return Ok(mapper.Map<List<CandidateApplicationDto>>(applications));
+            return Ok(applications);
         }
     }
 }

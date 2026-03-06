@@ -1,7 +1,6 @@
 ﻿using JobPlatform.Api.Data;
 using JobPlatform.Api.Models.Domain;
 using JobPlatform.Api.Models.Dto;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace JobPlatform.Api.Repositories
@@ -15,46 +14,48 @@ namespace JobPlatform.Api.Repositories
             this.dbContext = dbContext;
         }
 
-        public async Task<JobApplication> ApplyAsync(JobApplication application)
+        public async Task<JobApplication?> ApplyAsync(JobApplication application)
         {
-            var existingCandidate = await dbContext.Candidates.FirstOrDefaultAsync(x => x.Id == application.CandidateId);
-            if (existingCandidate == null)
+            var candidate = await dbContext.Candidates.FirstOrDefaultAsync(x => x.Id == application.CandidateId);
+            if (candidate == null)
             {
-                Console.WriteLine("Candidate not found");
                 return null;
             }
-            var existingJob = await dbContext.Jobs.FirstOrDefaultAsync(x => x.Id == application.JobId);
-            if (existingJob == null)
+            var job = await dbContext.Jobs.FirstOrDefaultAsync(x => x.Id == application.JobId);
+            if (job == null)
             {
-                Console.WriteLine("Job not found");
                 return null;
             }
-            var candidateQualification = await dbContext.Candidates.FirstOrDefaultAsync(x => x.Id == application.CandidateId);
-            if (candidateQualification.Qualification != existingJob.RequiredQualification)
+            if (candidate.Qualification != job.RequiredQualification)
             {
-                Console.WriteLine("Qualification does not match");
                 return null;
             }
+
+            var alreadyApplied = await dbContext.JobApplications.AnyAsync(x => 
+            x.CandidateId == application.CandidateId && x.JobId == application.JobId);
+
+            if (alreadyApplied)
+            {
+                return null;
+            }
+
             await dbContext.JobApplications.AddAsync(application);
             await dbContext.SaveChangesAsync();
-            return application;
-            
 
+            return application;
         }
 
         public async Task<List<CandidateApplicationDto>> GetByCandidateAsync(int candidateId)
         {
             return await dbContext.JobApplications
-            .Where(a => a.CandidateId == candidateId)
-            .Select(a => new CandidateApplicationDto
-            {
-                ApplicationId = a.Id,
-                JobTitle = a.Job.Title,
-                CompanyName = a.Job.Company.Name,
-                Salary = a.Job.Salary,
-               
-            })
-            .ToListAsync();
+                .Where(a => a.CandidateId == candidateId)
+                .Select(a => new CandidateApplicationDto
+                {
+                    ApplicationId = a.Id,
+                    JobTitle = a.Job.Title,
+                    CompanyName = a.Job.Company.Name,
+                    Salary = a.Job.Salary
+                }).ToListAsync();
         }
     }
 }
